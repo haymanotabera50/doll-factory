@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ethiopia-green: #078930;
+    --ethiopia-yellow: #fcdd09;
+    --ethiopia-red: #da121a;
+    --royal-gold: #f59e0b;
+    --royal-gold-light: #fde68a;
+    --royal-purple: #7e22ce;
+  }
+  
+  body {
+    background-color: #080605;
+    color: #fdfbf7;
+    font-family: 'Noto Sans Ethiopic', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Vibrant Ethiopian Tibeb Woven Patterns */
+.tibeb-ribbon {
+  background: linear-gradient(
+    90deg, 
+    #078930 0%, 
+    #00b040 20%, 
+    #fcdd09 35%, 
+    #ffc72c 50%, 
+    #da121a 65%, 
+    #ff2a34 80%, 
+    #eab308 100%
+  );
+  box-shadow: 0 0 15px rgba(252, 221, 9, 0.4);
+}
+
+.tibeb-border-vibrant {
+  background: repeating-linear-gradient(
+    45deg,
+    #078930,
+    #078930 14px,
+    #fcdd09 14px,
+    #fcdd09 28px,
+    #da121a 28px,
+    #da121a 42px,
+    #9333ea 42px,
+    #9333ea 56px
+  );
+}
+
+/* Colorful Glows */
+.glow-green {
+  box-shadow: 0 0 25px rgba(7, 137, 48, 0.35);
+}
+.glow-gold {
+  box-shadow: 0 0 25px rgba(252, 221, 9, 0.4);
+}
+.glow-red {
+  box-shadow: 0 0 25px rgba(218, 18, 26, 0.35);
+}
+.glow-purple {
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.35);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #fffbeb 0%, #fde047 30%, #f59e0b 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ethiopia-text-gradient {
+  background: linear-gradient(90deg, #22c55e 0%, #eab308 50%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animated Colorful Shimmer */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-border {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}
+
+/* Subtle cross pattern */
+.bg-cross-pattern {
+  background-image: 
+    radial-gradient(rgba(245, 158, 11, 0.15) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(34, 197, 94, 0.12) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
